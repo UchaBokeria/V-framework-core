@@ -1,0 +1,29 @@
+@import '../../Assets/Style/linkin';
+
+div[open="Header"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 40px 0;
+    @media only screen and (max-width: 768px) {
+       justify-content: space-between;
+    }
+}
+
+div[open="INROOT"] {
+    width: 100%;
+    height: auto;
+    // padding: 0 40px;
+}
+
+div[open="Footer"] {
+    background-color: $blue;
+    width: 100%;
+    height: 7.5vh;
+    max-height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

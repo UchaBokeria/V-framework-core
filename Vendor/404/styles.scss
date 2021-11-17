@@ -1,0 +1,27 @@
+@import "../../Assets/Style/reset";
+@import "../../Assets/Style/linkin";
+
+body {
+    background: rgb(41, 123, 178);
+    background: -moz-linear-gradient(183deg, rgba(41, 123, 178, 1) 0%, rgba(1, 23, 43, 1) 100%);
+    background: -webkit-linear-gradient(183deg, rgba(41, 123, 178, 1) 0%, rgba(1, 23, 43, 1) 100%);
+    background: linear-gradient(183deg, rgba(41, 123, 178, 1) 0%, rgba(1, 23, 43, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#297bb2",endColorstr="#01172b",GradientType=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .error-404 {
+            @include Roboto(700, 26.04vmax);
+            color: #0a2b46;
+        }
+        .error {
+            @include Roboto(700, 11.97vmax);
+            text-transform: uppercase;
+            color: #041e34;
+        }
+    }
+}

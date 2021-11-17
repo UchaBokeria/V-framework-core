@@ -1,0 +1,85 @@
+.Questions-container {
+  width: 100%;
+  height: 80vh;
+  background: #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Questions-container .title {
+  width: 90%;
+  height: 7vh;
+  padding: 2% 0;
+  font-size: 2vw;
+}
+
+.Questions-container .Question-Answer {
+  background: #F4F3F3;
+  width: 90%;
+  min-height: 10vh;
+  height: auto;
+  border-radius: 9px;
+  margin-top: 6vh;
+  padding: 1vh 1vw;
+  font-size: 1.4vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Questions-container .Question-Answer .Question {
+  width: 90%;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Questions-container .Question-Answer .rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.Questions-container .Question-Answer .Answer {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Questions-container .Question-Answer .hide {
+  display: none;
+}
+
+.Questions-container .Question-Answer i {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 2vw;
+  position: absolute;
+  right: 2vw;
+  color: #297bb2;
+  cursor: pointer;
+}

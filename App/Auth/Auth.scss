@@ -1,0 +1,188 @@
+@import "../../Assets/Style/components/components";
+
+.auth-container {
+    height: calc(100vh - 12.25vh - 7.5vh);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .show {
+        display: flex !important;
+    }
+    .hide {
+        display: none !important;
+    }
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .login-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 17px;
+        }
+    }
+    .register-container {
+        display: none;
+        // display: flex;
+        justify-content: center;
+        align-items: center;
+        .input-form {
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-end !important;
+            .inputs-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: 38px;
+            }
+            .input-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 17px;
+                select {
+                    border: 1px solid #297bb2;
+                    height: 50px;
+                    width: 270px;
+                    border-radius: 7px;
+                    padding: 15px 11px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+                &.phone-verify {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 12px;
+                    input {
+                        width: 129px;
+                    }
+                    button {
+                        width: 129px;
+                    }
+                }
+            }
+        }
+    }
+    .password-reset-container {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .password-reset {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            h1 {
+                @include Roboto(400, 28px);
+                color: $black;
+                text-transform: uppercase;
+            }
+            p {
+                @include Roboto(300, 21px);
+                color: $gray;
+                margin-top: 2rem;
+            }
+            .reset-input-form {
+                margin-top: 2.3rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end !important;
+                flex-direction: row;
+                gap: 50px;
+                .reset-input {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 17px;
+                }
+            }
+        }
+    }
+    .password-reset-container-2 {
+        display: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .password-reset {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            h1 {
+                @include Roboto(400, 28px);
+                color: $black;
+                text-transform: uppercase;
+            }
+            p {
+                @include Roboto(300, 21px);
+                color: $gray;
+                margin-top: 2rem;
+            }
+            .reset-input-form {
+                margin-top: 2.3rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end !important;
+                flex-direction: row;
+                gap: 50px;
+                .reset-input {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 17px;
+                }
+            }
+            .reset-btn {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                .btn {
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+    }
+    .auth-question {
+        @include Roboto(400, 15px);
+        color: $blue;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .password-reset-container-3 {
+        display: none !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .text-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 36px;
+            p {
+                @include Roboto(400, 28px);
+                color: $black;
+                &.login-link {
+                    color: $blue;
+                    font-style: italic;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

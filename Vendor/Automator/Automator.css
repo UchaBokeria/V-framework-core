@@ -1,0 +1,143 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* #Automator {
+  background-color: #297bb2;
+  border-radius: 20px;
+  padding: 17px;
+  width: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* #Automator .filter-checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+* #Automator .filter-checkbox-container input {
+  margin: 0;
+}
+
+* #Automator .filter-checkbox-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+* #Automator .filter-price-title-container,
+* #Automator .filter-area-title-container,
+* #Automator .filter-floor-title-container,
+* #Automator .filter-rooms-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+* #Automator .filter-price-title-container p,
+* #Automator .filter-area-title-container p,
+* #Automator .filter-floor-title-container p,
+* #Automator .filter-rooms-title-container p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+* #Automator .filter-price-input-container,
+* #Automator .filter-area-input-container,
+* #Automator .filter-floor-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 36px;
+}
+
+* #Automator .filter-price-input-container input,
+* #Automator .filter-area-input-container input,
+* #Automator .filter-floor-input-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 11px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+* #Automator .filter-price-input-container input::-webkit-input-placeholder,
+* #Automator .filter-area-input-container input::-webkit-input-placeholder,
+* #Automator .filter-floor-input-container input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #838383;
+}
+
+* #Automator .filter-price-input-container input:focus,
+* #Automator .filter-area-input-container input:focus,
+* #Automator .filter-floor-input-container input:focus {
+  outline: none;
+}
+
+* #Automator #filter-rooms-inputContainer {
+  width: 100%;
+}
+
+* #Automator #filter-rooms-inputContainer input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 11px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+* #Automator #filter-rooms-inputContainer input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #838383;
+}
+
+* #Automator #filter-rooms-inputContainer input:focus {
+  outline: none;
+}

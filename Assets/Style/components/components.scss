@@ -1,0 +1,591 @@
+@import "../linkin";
+
+// Button Component
+.btn {
+    background-color: $blue;
+    color: $white;
+    text-transform: uppercase;
+    @include Roboto(400, 17px);
+    @include flex(center);
+    height: 42px;
+    width: 270px;
+    border-radius: 20px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid $blue;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        border: 2px solid $blue;
+        background-color: $white;
+        color: $blue;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+// Input
+.input-form {
+    @include flex(between, column);
+    align-items: flex-start !important;
+    gap: 17px;
+    label {
+        @include Roboto(400, 15px);
+        color: $black;
+    }
+    input {
+        border: 1px solid $blue;
+        height: 50px;
+        width: 270px;
+        border-radius: 7px;
+        padding: 15px 11px;
+        @include Roboto(400, 15px);
+        &:focus-visible {
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            @include Roboto(400, 15px);
+            color: $gray;
+        }
+    }
+}
+
+// Currency Toggle Button
+.toggle-btn {
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50px;
+    position: relative;
+    background-color: $blue;
+    transition: background-color 0.4s ease-in-out;
+    cursor: pointer;
+    &:before {
+        content: "₾";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        transform: translateY(-50%);
+        color: $white;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+    }
+    &:after {
+        content: "$";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translateY(-50%);
+        color: $white;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+    }
+    &.active {
+        .round-btn {
+            left: 45px;
+            &:before {
+                content: "$";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $blue;
+                font-family: sans-serif;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .round-btn {
+        width: 30px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        margin-top: -15px;
+        z-index: 8;
+        transition: all 0.3s ease-in-out;
+        &:before {
+            content: "₾";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $blue;
+            font-family: sans-serif;
+            font-size: 1.3rem;
+        }
+    }
+    .toggle-btn-value {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 9;
+        cursor: pointer;
+    }
+}
+
+// Statement Card
+.statement-card {
+    width: 17.2vw;
+    background-color: #ffffff;
+    padding: 3%;
+    transition: all 0.5s ease-in-out;
+    &.vertical {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 28px;
+        width: 51.6vw;
+        .statement-description {
+            width: 23.6vw;
+            h1 {
+                margin-top: 0;
+            }
+            .statement-properties {
+                width: 16vw;
+            }
+        }
+    }
+    &:hover {
+        box-shadow: -5px 5px 16px -2px rgba(0, 0, 0, 0.25);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    .statement-image {
+        width: 15.44vw;
+        position: relative;
+        .statement-status {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            padding: 4px 10px;
+            border-radius: 20px;
+            @include Roboto(700, 20px);
+            color: $white;
+            &.s-vip {
+                background-color: $sVip;
+            }
+            &.vip {
+                background-color: $Vip;
+            }
+        }
+        .favorite {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            i {
+                font-size: 30px;
+            }
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .statement-description {
+        h1 {
+            @include Roboto(500, 24px);
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+        .price-area {
+            display: flex;
+            justify-content: flex-start;
+            gap: 20px;
+            align-items: center;
+            margin-top: 0.5rem;
+            p {
+                @include Roboto(400, 18px);
+            }
+            .price {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+            }
+            .statement-currency {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background-color: $blue;
+                @include flex(center);
+                align-items: center;
+                span {
+                    @include Roboto(400, 12px);
+                    color: $white;
+                }
+            }
+            .area {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        .statement-properties {
+            @include flex(between);
+            align-items: center;
+            margin-top: 0.5rem;
+            width: 60%;
+            span {
+                @include Roboto(300, 14px);
+                color: $darkGray;
+            }
+        }
+        .statement-desc {
+            margin-top: 0.5rem;
+            @include Roboto(300, 17px);
+            color: $black;
+            line-height: 1.6;
+        }
+    }
+}
+
+// Dashboard Card
+.dashboard-card {
+    width: 20.2vw;
+    .dashboard-statement-image {
+        width: 20.2vw;
+        position: relative;
+        background-color: $black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            .views,
+            .btn {
+                visibility: visible;
+            }
+            img {
+                opacity: 0.4;
+            }
+        }
+        img {
+            width: 100%;
+            opacity: 0.8;
+            border-radius: 5px;
+        }
+        i {
+            position: absolute;
+            top: 8%;
+            background-color: $white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.5s ease-in-out;
+            &.icon-delete {
+                left: 5%;
+            }
+            &.icon-edit {
+                right: 5%;
+            }
+            &:before {
+                transition: all 0.5s ease-in-out;
+                color: $blue;
+            }
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                background-color: $blue;
+                cursor: pointer;
+                &:before {
+                    color: $white;
+                }
+            }
+        }
+        .views {
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            @include Roboto(400, 14 px);
+            font-style: italic;
+            color: $white;
+            visibility: hidden;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+    }
+    .title-price-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+        h1 {
+            @include Roboto(500, 24px);
+            text-transform: uppercase;
+            color: $black;
+        }
+        p {
+            @include Roboto(500, 24px);
+            color: $green;
+        }
+    }
+    .status-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 0.5rem;
+        gap: 10px;
+        p {
+            @include Roboto(300, 18px);
+            font-style: italic;
+            color: $black;
+        }
+    }
+}
+
+// Bookmarks Card
+.bookmark-card {
+    width: 20.2vw;
+    .bookmark-statement-image {
+        width: 20.2vw;
+        position: relative;
+        background-color: $black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            .views,
+            .btn {
+                visibility: visible;
+            }
+            img {
+                opacity: 0.4;
+            }
+        }
+        img {
+            width: 100%;
+            opacity: 0.8;
+            border-radius: 5px;
+        }
+        i {
+            position: absolute;
+            top: 8%;
+            background-color: $white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: all 0.5s ease-in-out;
+            &.icon-bookmark {
+                right: 5%;
+            }
+            &:before {
+                transition: all 0.5s ease-in-out;
+                color: $blue;
+            }
+            &:hover {
+                transition: all 0.5s ease-in-out;
+                background-color: $blue;
+                cursor: pointer;
+                &:before {
+                    color: $white;
+                }
+            }
+        }
+        .views {
+            position: absolute;
+            right: 5%;
+            bottom: 5%;
+            @include Roboto(400, 14 px);
+            font-style: italic;
+            color: $white;
+            visibility: hidden;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+    }
+    .title-price-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+        h1 {
+            @include Roboto(500, 24px);
+            text-transform: uppercase;
+            color: $black;
+        }
+        p {
+            @include Roboto(500, 24px);
+            color: $green;
+        }
+    }
+}
+
+// Analytics Card
+.analytics-card {
+    width: 100%;
+    .analytics-statement-image {
+        width: inherit;
+        position: relative;
+        background-color: $black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            .views,
+            .btn {
+                visibility: visible;
+            }
+            img {
+                opacity: 0.4;
+            }
+        }
+        img {
+            width: 100%;
+            opacity: 0.8;
+            border-radius: 5px;
+        }
+        .views {
+            position: absolute;
+            right: 2.5%;
+            bottom: 5%;
+            @include Roboto(400, 14 px);
+            font-style: italic;
+            color: $white;
+            visibility: hidden;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+    }
+    .title-price-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+        h1 {
+            @include Roboto(500, 24px);
+            text-transform: uppercase;
+            color: $black;
+        }
+        p {
+            @include Roboto(500, 24px);
+            color: $green;
+        }
+    }
+}
+
+// Profile Container
+.profile-container {
+    margin-top: 100px;
+    width: 67.7vw;
+    background-color: $gray;
+    padding: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 75px;
+    border-radius: 30px;
+    position: relative;
+    .icon-edit {
+        position: absolute;
+        top: 8%;
+        right: 5%;
+        background-color: $white;
+        padding: 10px;
+        border-radius: 50%;
+        font-size: 18px;
+        transition: all 0.5s ease-in-out;
+        &:before {
+            transition: all 0.5s ease-in-out;
+            color: $blue;
+        }
+        &:hover {
+            transition: all 0.5s ease-in-out;
+            background-color: $blue;
+            cursor: pointer;
+            &:before {
+                color: $white;
+            }
+        }
+    }
+    .profile-image {
+        max-width: 127px;
+        img {
+            width: 100%;
+        }
+    }
+    .profile-info {
+        h1 {
+            @include Roboto(400, 48px);
+            color: $black;
+        }
+        .profile-info-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 85px;
+            margin-top: 35px;
+            .profile-data-wrapper {
+                .profile-data {
+                    @include Roboto(400, 20px);
+                    color: $darkGray;
+                    margin-top: 20px;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                    span {
+                        @include Roboto(400, 24px);
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+.paging-track {
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+}
+.paging-btn {
+    width: 70px;
+    height: 38px;
+    background-color: $gray;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    p {
+        color: $blue;
+        @include Roboto(400, 24px);
+        transition: all 0.5s ease-in-out;
+    }
+    &:hover {
+        background-color: $blue;
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;    
+        p {
+            color: $white;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+}

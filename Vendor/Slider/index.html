@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../Assets/Icons/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="slider.css" rel="stylesheet">
+        <script src="../../Modules/System.js"></script>
+    </head>
+    <body>
+        <div id="mySlider" style="width:80%;"></div>
+        <script src="slider.js"></script>
+        <script>
+            const newslider = new Slider({
+                data: { route: "Home", act: "read", vip:1 ,url: "../../response.php" },
+                area: "#mySlider",
+                type: "carousel",
+                scrollHide: false,
+                class: ["asas","sadasdas"],
+                buttons: {
+                    left: true,
+                    right: true,
+                },
+                scrollHide: true,
+                template: "<p>{title}</p><img src='../../Assets/Uploads/{dir}'>",
+                cell: {
+                    class: ["slider-cell"],
+                    attributes: ["cell-id","dir","title","description","bedrooms","rooms","price","space","floor"],
+                    gap: "4vw",
+                    width: "30%"
+                }
+            });
+        </script>
+    </body>
+</html>

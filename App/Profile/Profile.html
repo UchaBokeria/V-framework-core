@@ -1,0 +1,292 @@
+<div class="dashboard-panel">
+  <div class="dashboard-navigation-panel">
+    <div class="dashboard-button active" dashboard-tab="dashboard">
+      <i class="icon-dashboard"></i>
+      <p>Dashboard</p>
+    </div>
+    <div class="dashboard-button" dashboard-tab="bookmarks">
+      <i class="icon-bookmark"></i>
+      <p>Bookmarks</p>
+    </div>
+    <div class="dashboard-button" dashboard-tab="analytics">
+      <i class="icon-analytics"></i>
+      <p>Analytics</p>
+    </div>
+    <div class="dashboard-button" dashboard-tab="profile">
+      <i class="icon-about"></i>
+      <p>Profile</p>
+    </div>
+    <div class="dashboard-button">
+      <i class="icon-logout"></i>
+      <p>Logout</p>
+    </div>
+  </div>
+</div>
+
+<!-- Dashboard -->
+<div class="dashboard db-element" dashboard-element="dashboard">
+  <div class="dashboard-settings">
+    <button>Create</button>
+    <div class="sorter">
+      <div id="dashboardDropdown"></div>
+      <i class="icon-bigDownArrow"></i>
+    </div>
+    <div class="dashboard-search">
+      <form class="input-form">
+        <input type="text" placeholder="Search" />
+        <button class="search-btn">
+          <i class="icon-search"></i>
+        </button>
+      </form>
+    </div>
+    <div class="datePicker">
+      <input type="text" id="datepicker" placeholder="Pick a date"/>
+    </div>
+  </div>
+  <div class="dashboard-statements">
+    <div class="dashboard-card">
+      <div class="dashboard-statement-image">
+        <img src="./Assets/Uploads/statement.jpg" alt="#" />
+        <i class="icon-delete"></i>
+        <i class="icon-edit"></i>
+        <button class="btn">See Details</button>
+        <p class="views">Views 200</p>
+      </div>
+      <div class="title-price-wrapper">
+        <h1 class="statement-title">Apartment for Sale</h1>
+        <p>$1K</p>
+      </div>
+      <div class="status-wrapper">
+        <i class="icon-approved"></i>
+        <p>Approved</p>
+      </div>
+    </div>
+    <div class="dashboard-card">
+      <div class="dashboard-statement-image">
+        <img src="./Assets/Uploads/statement.jpg" alt="#" />
+        <i class="icon-delete"></i>
+        <i class="icon-edit"></i>
+        <button class="btn">See Details</button>
+        <p class="views">Views 200</p>
+      </div>
+      <div class="title-price-wrapper">
+        <h1 class="statement-title">Apartment for Sale</h1>
+        <p>$1K</p>
+      </div>
+      <div class="status-wrapper">
+        <i class="icon-approved"></i>
+        <p>Approved</p>
+      </div>
+    </div>
+    <div class="dashboard-card">
+      <div class="dashboard-statement-image">
+        <img src="./Assets/Uploads/statement.jpg" alt="#" />
+        <i class="icon-delete"></i>
+        <i class="icon-edit"></i>
+        <button class="btn">See Details</button>
+        <p class="views">Views 200</p>
+      </div>
+      <div class="title-price-wrapper">
+        <h1 class="statement-title">Apartment for Sale</h1>
+        <p>$1K</p>
+      </div>
+      <div class="status-wrapper">
+        <i class="icon-approved"></i>
+        <p>Approved</p>
+      </div>
+    </div>
+  </div>
+  <div class="paging">
+    <div class="paging-track">
+      <div class="paging-btn">
+        <p><</p>
+      </div>
+      <div class="paging-btn">
+        <p>1</p>
+      </div>
+      <div class="paging-btn">
+        <p>2</p>
+      </div>
+      <div class="paging-btn">
+        <p>3</p>
+      </div>
+      <div class="paging-btn">
+        <p>...</p>
+      </div>
+      <div class="paging-btn">
+        <p>></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bookmarks -->
+<div class="bookmark hidden db-element" dashboard-element="bookmarks">
+  <div class="bookmark-search">
+    <form class="input-form">
+      <div class="search-wrapper">
+        <input type="text" placeholder="Search" />
+        <button class="search-btn">
+          <i class="icon-search"></i>
+        </button>
+      </div>
+      <div class="datePicker">
+        <input type="text" id="bookmarkDatepicker" placeholder="Pick a date"/>
+      </div>
+    </form>
+  </div>
+  <div class="bookmark-statements">
+    <div class="bookmark-card">
+      <div class="bookmark-statement-image">
+        <img src="./Assets/Uploads/statement.jpg" alt="#" />
+        <i class="icon-bookmark"></i>
+        <button class="btn">See Details</button>
+        <p class="views">Views 200</p>
+      </div>
+      <div class="title-price-wrapper">
+        <h1 class="statement-title">Apartment for Sale</h1>
+        <p>$1K</p>
+      </div>
+    </div>
+    <div class="bookmark-card">
+      <div class="bookmark-statement-image">
+        <img src="./Assets/Uploads/statement.jpg" alt="#" />
+        <i class="icon-bookmark"></i>
+        <button class="btn">See Details</button>
+        <p class="views">Views 200</p>
+      </div>
+      <div class="title-price-wrapper">
+        <h1 class="statement-title">Apartment for Sale</h1>
+        <p>$1K</p>
+      </div>
+    </div>
+    <div class="bookmark-card">
+      <div class="bookmark-statement-image">
+        <img src="./Assets/Uploads/statement.jpg" alt="#" />
+        <i class="icon-bookmark"></i>
+        <button class="btn">See Details</button>
+        <p class="views">Views 200</p>
+      </div>
+      <div class="title-price-wrapper">
+        <h1 class="statement-title">Apartment for Sale</h1>
+        <p>$1K</p>
+      </div>
+    </div>
+  </div>
+  <div class="paging">
+    <div class="paging-track">
+      <div class="paging-btn">
+        <p><</p>
+      </div>
+      <div class="paging-btn">
+        <p>1</p>
+      </div>
+      <div class="paging-btn">
+        <p>2</p>
+      </div>
+      <div class="paging-btn">
+        <p>3</p>
+      </div>
+      <div class="paging-btn">
+        <p>...</p>
+      </div>
+      <div class="paging-btn">
+        <p>></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Analytics -->
+<div class="analytics hidden db-element" dashboard-element="analytics">
+  <div class="analytics-card">
+    <div class="analytics-statement-image">
+      <img src="./Assets/Uploads/admin-statement.jpg" alt="#" />
+      <button class="btn">See Reports</button>
+      <p class="views">Views 200</p>
+    </div>
+    <div class="title-price-wrapper">
+      <h1 class="statement-title">Apartment for Sale</h1>
+      <p>$1K</p>
+    </div>
+  </div>
+  <div class="analytics-card">
+    <div class="analytics-statement-image">
+      <img src="./Assets/Uploads/admin-statement.jpg" alt="#" />
+      <button class="btn">See Reports</button>
+      <p class="views">Views 200</p>
+    </div>
+    <div class="title-price-wrapper">
+      <h1 class="statement-title">Apartment for Sale</h1>
+      <p>$1K</p>
+    </div>
+  </div>
+  <div class="analytics-card">
+    <div class="analytics-statement-image">
+      <img src="./Assets/Uploads/admin-statement.jpg" alt="#" />
+      <button class="btn">See Reports</button>
+      <p class="views">Views 200</p>
+    </div>
+    <div class="title-price-wrapper">
+      <h1 class="statement-title">Apartment for Sale</h1>
+      <p>$1K</p>
+    </div>
+  </div>
+  <div class="paging">
+    <div class="paging-track">
+      <div class="paging-btn">
+        <p><</p>
+      </div>
+      <div class="paging-btn">
+        <p>1</p>
+      </div>
+      <div class="paging-btn">
+        <p>2</p>
+      </div>
+      <div class="paging-btn">
+        <p>3</p>
+      </div>
+      <div class="paging-btn">
+        <p>...</p>
+      </div>
+      <div class="paging-btn">
+        <p>></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Profile -->
+<div class="profile hidden db-element" dashboard-element="profile">
+  <div class="profile-container">
+    <i class="icon-edit"></i>
+    <div class="profile-image">
+      <img src="./Assets/Uploads/profile.png" alt="#" />
+    </div>
+    <div class="profile-info">
+      <h1 class="profile-name">David Jackson</h1>
+      <div class="profile-info-wrapper">
+        <div class="profile-data-wrapper">
+          <p class="profile-data"><span>Email:</span> mail@gmail.com</p>
+          <p class="profile-data"><span>Mobile:</span> +995 555 555 555</p>
+          <p class="profile-data"><span>Country:</span> Georgia</p>
+          <p class="profile-data"><span>City:</span> Tbilisi</p>
+          <p class="profile-data"><span>Gender:</span> Male</p>
+        </div>
+        <div class="profile-data-wrapper">
+          <p class="profile-data"><span>Posts:</span> 18</p>
+          <p class="profile-data"><span>Saved:</span> 20</p>
+          <p class="profile-data"><span>Sold:</span> 20</p>
+          <p class="profile-data"><span>Brought:</span> 20</p>
+          <p class="profile-data"><span>Rate:</span> 5/5</p>
+        </div>
+        <div class="profile-data-wrapper">
+          <p class="profile-data"><span>Approved:</span> 15</p>
+          <p class="profile-data"><span>Pendding:</span> 1</p>
+          <p class="profile-data"><span>Not Approved:</span> 2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="profileChart"></div>
+</div>

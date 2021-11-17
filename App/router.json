@@ -1,0 +1,42 @@
+[
+    {
+        "id" : 1 ,
+        "page" : "Auth",
+        "pageID" : 3
+    },
+    {
+        "id" : 2 ,
+        "page" : "Details",
+        "pageID" : 2
+    },
+    {
+        "id" : 3 ,
+        "page" : "Estate",
+        "pageID" : 2
+    },
+    {
+        "id" : 4 ,
+        "page" : "Footer",
+        "pageID" : 1
+    },
+    {
+        "id" : 5 ,
+        "page" : "Header",
+        "pageID" : 1
+    },
+    {
+        "id" : 7 ,
+        "page" : "Profile",
+        "pageID" : 4
+    },
+    {
+        "id" : 8 ,
+        "page" : "Home",
+        "pageID" : 1
+    },
+    {
+        "id" : 9 ,
+        "page" : "Main",
+        "pageID" : 0
+    }
+]

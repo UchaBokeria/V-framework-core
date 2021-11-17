@@ -1,0 +1,36 @@
+[
+    {
+        "elements": [
+            {
+                "el": "select",
+                "section": "1",
+                "class": ["filter-category"],
+                "id": "filter-category",
+                "data": { "route": "Automator", "act": "build" },
+                "changeAble": false,
+                "attributes": [ {"data-id":""}, {"type":"checkbox"} ],
+                "onChange": [ 2,3 ]
+            },
+            {
+                "el": "input",
+                "section": "2",
+                "class": ["filter-category_1"],
+                "id": "filter-category_1",
+                "data": { "route": "Automator", "act": "build" },
+                "changeAble": false,
+                "attributes": [ {"data-id":""}, {"type":"checkbox"} ],
+                "onChange": [ 2,3]
+            },
+            {
+                "el": "input",
+                "section": "3",
+                "class": ["filter-category_1"],
+                "id": "filter-category_1",
+                "data": { "route": "Automator", "act": "build" },
+                "changeAble": false,
+                "attributes": [ {"data-id":""}, {"type":"text"} ],
+                "onChange": [ 2,3 ]
+            }
+        ]
+    }
+]

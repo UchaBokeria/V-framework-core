@@ -1,0 +1,127 @@
+<div class="auth-container">
+  <!-- Login -->
+  <div class="login-container">
+    <form class="input-form">
+      <div class="login-input">
+        <label>Username</label>
+        <input type="text" placeholder="Enter your Username" />
+      </div>
+      <div class="login-input">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your Password" />
+        <p class="auth-question auth-q-forgot" Vtext="FORGOT_PASSWORD"></p>
+        <p class="auth-question auth-q-register" Vtext="DONT_HAVE_ACC"></p>
+      </div>
+      <button class="btn" Vtext="SIGN_IN"></button>
+    </form>
+  </div>
+
+  <!-- Register -->
+  <div class="register-container">
+    <form class="input-form">
+      <!-- Name & Email Inputs -->
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <label>Fullname</label>
+          <input type="text" placeholder="Enter your Fullname" />
+        </div>
+        <div class="input-container">
+          <label>Email</label>
+          <input type="email" placeholder="Enter your Email" />
+        </div>
+      </div>
+      <!-- Password -->
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your Password" />
+        </div>
+        <div class="input-container">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm your Password" />
+        </div>
+      </div>
+      <!-- Birthday & Gender -->
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <label>Birthday</label>
+          <input type="text" placeholder="Enter your Birthday" />
+        </div>
+        <div class="input-container">
+          <label>Gender</label>
+          <!-- <input type="text" placeholder="Enter your Username" /> -->
+          <select name="Gender" id="genders">
+            <option value="clear">Choose your Gender</option>
+            <option value="notSpecified">Not specified</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <!-- Country & City -->
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <label>Country</label>
+          <input type="text" placeholder="Enter your Country" />
+        </div>
+        <div class="input-container">
+          <label>City</label>
+          <input type="text" placeholder="Enter your City" />
+        </div>
+      </div>
+      <!-- Phone & Submit -->
+      <div class="inputs-wrapper">
+        <div class="input-container">
+          <label>Phone</label>
+          <input type="tel" placeholder="Enter your Phone" />
+        </div>
+        <button class="btn" Vtext="SIGN_UP"></button>
+      </div>
+      <p class="auth-question auth-q-login" Vtext="ALREADY_HAVE_ACC"></p>
+    </form>
+  </div>
+
+  <!-- Password Reset-1 -->
+  <div class="password-reset-container">
+    <div class="password-reset">
+      <h1>Reset Password</h1>
+      <form class="input-form reset-input-form">
+        <div class="reset-input">
+          <label Vtext="MAIL">Email</label>
+          <input type="email" placeholder="Enter your Email" />
+        </div>
+        <button class="btn">Send</button>
+      </form>
+      <p>We sent a reset link. Please check your Email.</p>
+    </div>
+  </div>
+
+  <!-- Password Reset-2 -->
+  <div class="password-reset-container-2">
+    <div class="password-reset">
+      <h1>Reset Password</h1>
+      <form class="input-form reset-input-form">
+        <div class="reset-input">
+          <label>New Password</label>
+          <input type="text" placeholder="Enter New Password" />
+        </div>
+        <div class="reset-input">
+          <label>Confirm New Password</label>
+          <input type="text" placeholder="Confirm New Password" />
+        </div>
+      </form>
+      <div class="reset-btn">
+        <button class="btn">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Password Reset-3 -->
+  <div class="password-reset-container-3">
+    <div class="text-wrapper">
+      <p>Password changed successfully. Please Login again.</p>
+      <p class="login-link">Go to Login</p>
+    </div>
+  </div>
+</div>

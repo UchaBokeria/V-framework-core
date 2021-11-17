@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../ApexCharts/apexcharts.css" rel="stylesheet">
+        <link href="Automator.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../../modules/System.js"></script>
+    </head>
+    <body>
+        <div id="Automator"></div>
+        
+        <script src="Automator.js"></script>
+        <script>
+          var automator = new Automator({
+            data: {
+                route: "Automator",
+                act: "build",
+                url: "../../response.php"
+            },
+            area: "#Automator",
+            class: ["container"],
+            options: {
+                chosen: { name: "aa" },
+                attributes: ["id", "name"],
+                class: ["optionies", "red"],
+            }
+          });
+        </script>
+    </body>
+</html>

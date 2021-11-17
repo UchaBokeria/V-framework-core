@@ -1,0 +1,275 @@
+$icomoon-font-family: "icony" !default;
+$icomoon-font-path: "fonts" !default;
+
+$icon-about: "\e900";
+$icon-analytics: "\e901";
+$icon-approved: "\e902";
+$icon-area: "\e903";
+$icon-bed: "\e904";
+$icon-bigDownArrow: "\e905";
+$icon-bookmark: "\e906";
+$icon-close: "\e907";
+$icon-conditioner: "\e908";
+$icon-customize: "\e909";
+$icon-dashboard: "\e90a";
+$icon-delete: "\e90b";
+$icon-displayType: "\e90c";
+$icon-door: "\e90d";
+$icon-edit: "\e90e";
+$icon-favorite: "\e90f";
+$icon-floor: "\e910";
+$icon-gas: "\e911";
+$icon-hamgurger: "\e912";
+$icon-heating: "\e913";
+$icon-location: "\e914";
+$icon-logout: "\e915";
+$icon-message: "\e916";
+$icon-notAprroved: "\e917";
+$icon-parking: "\e918";
+$icon-phone: "\e919";
+$icon-playRight: "\e91a";
+$icon-plus: "\e91b";
+$icon-pool: "\e91c";
+$icon-print: "\e91d";
+$icon-profile: "\e91e";
+$icon-rightArrow: "\e91f";
+$icon-search: "\e920";
+$icon-selectedFavorite: "\e921";
+$icon-share: "\e922";
+$icon-wifi: "\e923";
+
+
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tnqxfh');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?tnqxfh#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?tnqxfh') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?tnqxfh') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?tnqxfh##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-about {
+  &:before {
+    content: $icon-about; 
+  }
+}
+.icon-analytics {
+  &:before {
+    content: $icon-analytics; 
+  }
+}
+.icon-approved {
+  &:before {
+    content: $icon-approved;     
+    color: #00df16;
+  }
+}
+.icon-area {
+  &:before {
+    content: $icon-area;     
+    color: #838383;
+  }
+}
+.icon-bed {
+  &:before {
+    content: $icon-bed;     
+    color: #838383;
+  }
+}
+.icon-bigDownArrow {
+  &:before {
+    content: $icon-bigDownArrow;     
+    color: #fff;
+  }
+}
+.icon-bookmark {
+  &:before {
+    content: $icon-bookmark; 
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close; 
+  }
+}
+.icon-conditioner {
+  &:before {
+    content: $icon-conditioner;     
+    color: #838383;
+  }
+}
+.icon-customize {
+  &:before {
+    content: $icon-customize;     
+    color: #297bb2;
+  }
+}
+.icon-dashboard {
+  &:before {
+    content: $icon-dashboard; 
+  }
+}
+.icon-delete {
+  &:before {
+    content: $icon-delete;     
+    color: #e80d25;
+  }
+}
+.icon-displayType {
+  &:before {
+    content: $icon-displayType;     
+    color: #297bb2;
+  }
+}
+.icon-door {
+  &:before {
+    content: $icon-door;     
+    color: #838383;
+  }
+}
+.icon-edit {
+  &:before {
+    content: $icon-edit; 
+  }
+}
+.icon-favorite {
+  &:before {
+    content: $icon-favorite;     
+    color: #fff;
+  }
+}
+.icon-floor {
+  &:before {
+    content: $icon-floor;     
+    color: #838383;
+  }
+}
+.icon-gas {
+  &:before {
+    content: $icon-gas;     
+    color: #838383;
+  }
+}
+.icon-hamgurger {
+  &:before {
+    content: $icon-hamgurger; 
+  }
+}
+.icon-heating {
+  &:before {
+    content: $icon-heating;     
+    color: #838383;
+  }
+}
+.icon-location {
+  &:before {
+    content: $icon-location; 
+  }
+}
+.icon-logout {
+  &:before {
+    content: $icon-logout; 
+  }
+}
+.icon-message {
+  &:before {
+    content: $icon-message; 
+  }
+}
+.icon-notAprroved {
+  &:before {
+    content: $icon-notAprroved;     
+    color: #e80d25;
+  }
+}
+.icon-parking {
+  &:before {
+    content: $icon-parking;     
+    color: #838383;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-playRight {
+  &:before {
+    content: $icon-playRight;     
+    color: #297bb2;
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus;     
+    color: #fff;
+  }
+}
+.icon-pool {
+  &:before {
+    content: $icon-pool;     
+    color: #838383;
+  }
+}
+.icon-print {
+  &:before {
+    content: $icon-print;     
+    color: #fff;
+  }
+}
+.icon-profile {
+  &:before {
+    content: $icon-profile;     
+    color: #297bb2;
+  }
+}
+.icon-rightArrow {
+  &:before {
+    content: $icon-rightArrow;     
+    color: #297bb2;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;     
+    color: #fff;
+  }
+}
+.icon-selectedFavorite {
+  &:before {
+    content: $icon-selectedFavorite;     
+    color: #f40049;
+  }
+}
+.icon-share {
+  &:before {
+    content: $icon-share;     
+    color: #fff;
+  }
+}
+.icon-wifi {
+  &:before {
+    content: $icon-wifi;     
+    color: #838383;
+  }
+}
+

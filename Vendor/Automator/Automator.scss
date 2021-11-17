@@ -1,0 +1,81 @@
+@import "../../Assets/Style/linkin";
+* {
+    box-sizing: border-box;
+    #Automator {
+        background-color: $blue;
+        border-radius: 20px;
+        padding: 17px;
+        width: 310px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        .filter-checkbox-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 13px;
+            input {
+                margin: 0;
+            }
+            p {
+                @include Roboto(400, 18px);
+                color: $white;
+            }
+        }
+        .filter-price-title-container,
+        .filter-area-title-container,
+        .filter-floor-title-container,
+        .filter-rooms-title-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 13px;
+            p {
+                @include Roboto(400, 20px);
+                color: $white;
+            }
+        }
+        .filter-price-input-container,
+        .filter-area-input-container,
+        .filter-floor-input-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 36px;
+            input {
+                width: 100%;
+                padding: 10px;
+                border-radius: 11px;
+                border: none;
+                @include Roboto(400, 16px);
+                color: $black;
+                &::-webkit-input-placeholder {
+                    @include Roboto(400, 16px);
+                    color: $darkGray;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        #filter-rooms-inputContainer {
+            width: 100%;
+            input {
+                width: 100%;
+                padding: 10px;
+                border-radius: 11px;
+                border: none;
+                @include Roboto(400, 16px);
+                color: $black;
+                &::-webkit-input-placeholder {
+                    @include Roboto(400, 16px);
+                    color: $darkGray;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
